@@ -21,7 +21,7 @@ const app = {
           })
       },
         getData() {
-          axios.get(`${url}/api/${path}/admin/products`)
+          axios.get(`${url}/api/${path}/admin/products/all`)
           .then((res) => {
             this.products = res.data.products;
            
